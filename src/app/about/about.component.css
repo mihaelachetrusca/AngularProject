@@ -1,0 +1,161 @@
+/* About */
+.sectionn {
+    width: 100%;
+}
+
+.sectionn .containerr {
+    width: 80%;
+    display: block;
+    margin: 0px auto;
+    padding: 20px 0px;
+}
+
+.containerr .title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.containerr .title h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #dd76ce;
+}
+
+.containerr .title h1::after {
+    content: "";
+    height: 5px;
+    width: 150px;
+    background-color: #e161c7;
+    border-radius: 15px;
+    display: block;
+    margin: auto;
+}
+
+.contentt {
+    float: left;
+    width: 50%;
+}
+
+.imag {
+    float: right;
+    width: 40%;
+}
+
+.imag img {
+    width: 65%;
+    height: 70%;
+}
+
+.contentt .article h3 {
+    color: #747171;
+    font-size: 17px;
+    text-align: justify;
+    text-indent: 40px;
+    line-height: 1.5;
+}
+
+.contentt .article p {
+    font-size: 16px;
+    margin-top: 15px;
+    text-align: justify;
+    text-indent: 40px;
+    line-height: 1.5;
+}
+
+.contentt .article .button {
+    margin-top: 40px;
+}
+
+.contentt .article .button a {
+    background-color: var(--dark);
+    color: var(--light);
+    padding: 0.6rem 1.3rem;
+    text-decoration: none;
+    border: 0;
+}
+
+.contentt .article .button a:hover {
+    color: #000;
+    background-color: #e8b6ef;
+    transition: 1s ease;
+}
+
+.containerr .social {
+    width: 100%;
+    clear: both;
+    margin-top: 30px;
+    text-align: center;
+    display: inline-block;
+
+}
+
+.containerr .social i {
+    color: #fff;
+    font-size: 24px;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    line-height: 45px;
+    text-align: center;
+    background-color: #dd76ce;
+    margin: 0px 5px;
+
+}
+
+.containerr .social i:hover {
+    color: black;
+    background-color: #abcddb;
+    transition: 1s ease;
+    transform: rotate(360deg);
+}
+
+@media screen and (max-width: 700px) {
+    .section .containerr {
+        width: 80%;
+        display: block;
+        margin: auto;
+    }
+
+    .contentt {
+        float: none;
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+
+    .imag {
+        float: none;
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .imag img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+
+    .containerr .title h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .containerr .article .button {
+        text-align: center;
+    }
+
+    .containerr .article .button a {
+        padding: 8px 15px;
+        font-size: 16px;
+    }
+
+    .containerr .social i {
+        font-size: 19px;
+        height: 35px;
+        width: 35px;
+        line-height: 35px;
+    }
+
+}

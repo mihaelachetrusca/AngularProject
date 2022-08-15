@@ -1,0 +1,28 @@
+
+<div class="hi">
+    <p>
+        INSPIRE. DREAM. DISCOVER.
+    </p>
+</div>
+<div class="content">
+    <div fxLayout="row wrap" fxLayoutGap="25px grid">
+        <div fxFlex="20%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let num of [1,2,3,4,5,6,7,8,9,10]">
+            <mat-card class="mat-elevation-z4">
+                <mat-card-header>
+                    <mat-card-title>Place {{num}}</mat-card-title> 
+                </mat-card-header>
+                <img mat-card-image src="../../assets/img/img2.jpg" alt="img" height="250px">
+                <mat-card-content>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p><hr>
+                </mat-card-content>
+                <mat-card-actions class="button">
+                    <button mat-button>Like</button>
+                    <button mat-button>Share</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </div> 
+</div>
+

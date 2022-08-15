@@ -1,0 +1,64 @@
+<div class="container">
+<form [formGroup]="registerForm" (ngSubmit)="registerSubmited()" class="border p-3 rounded-3">
+    <div class="row g-0">
+        <div class="col text-center p-3 mb-3 bg-light">
+            <span class="fs-3">Register</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col mb-3">
+            <label for="firstname" class="form-label"><b>First Name:</b></label>
+            <input type="text" class="form-control" id="firstname" formControlName="firstname">
+        </div>
+        <div class="col mb-3">
+            <label for="lastname" class="form-label"><b>Last Name:</b></label>
+            <input type="text" class="form-control" id="lastname" formControlName="lastname">
+        </div>
+    </div>  
+    <div class="row">
+        <div class="col mb-3">
+            <label for="email" class="form-label"><b>Email Adress:</b></label>
+            <input type="email" class="form-control" id="email" formControlName="email">
+            <div class="form-text"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col mb-3">
+            <label for="mobile" class="form-label"><b>Mobile Number:</b></label>
+            <input type="text" class="form-control" id="mobile" formControlName="mobile">
+            <div class="form-text"></div>
+        </div>
+        <div class="col ps-3 mb-3">
+            <div class="m-1"><b>Gender:</b></div>
+            <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" value="f" id="female" formControlName="gender">
+            <label class="form-check-label" for="female"><b>Female</b></label>
+            </div>
+            <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" value="m" id="male" formControlName="gender">
+            <label class="form-check-label" for="male"><b>Male</b></label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col mb-3">
+                <label for="password" class="form-label"><b>Password:</b></label>
+                <input type="password" class="form-control" id="password" formControlName="password">
+                <div class="form-text"></div>
+            </div>
+            <div class="col mb-3">
+                <label for="rpassword" class="form-label"><b>Repeat Password:</b></label>
+                <input type="password" class="form-control" id="rpassword" formControlName="rpassword">
+                <div class="form-text"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 offset-3">
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+</div>

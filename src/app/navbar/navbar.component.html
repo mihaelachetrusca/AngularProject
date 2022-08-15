@@ -1,0 +1,17 @@
+<mat-toolbar color="primary" class="mat-elevation-z6">
+
+    <mat-icon>language</mat-icon><span>Travel</span>
+    <div class="top-bar">
+    <a mat-button routerLinkActive="active" routerLink="home">{{'navbar.home' | translate}}</a>
+    <a mat-button routerLinkActive="active" routerLink="about">{{'navbar.about' | translate}}</a>
+    <a mat-button routerLinkActive="active" routerLink="services">{{'navbar.services' | translate}}</a>
+    <a mat-button routerLinkActive="active" routerLink="gallery">{{'navbar.gallery' | translate}}</a>
+    <a mat-button routerLinkActive="active" routerLink="contact">{{'navbar.contact' | translate}}</a>
+    <a mat-raised-button color="accent" routerLinkActive="active" routerLink="signup">{{'navbar.signup' | translate}}</a>
+    </div>
+
+    <button (click)="useTranslation('en')">En</button>
+    <button (click)="useTranslation('ru')">Ru</button>
+    <button (click)="useTranslation('ro')">Ro</button>
+
+</mat-toolbar>
